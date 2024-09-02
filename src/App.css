@@ -1,0 +1,308 @@
+/* General Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light background */
+}
+
+.App {
+  text-align: center;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header Section */
+.App-header {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 1s ease-in-out;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.round-logo {
+  border-radius: 50%;
+}
+
+.App-header h1 {
+  font-size: 2.5em;
+  transition: color 0.3s ease;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.App-header h1:hover {
+  color: #ffc107;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content {
+  text-align: left;
+  margin-right: 10px;
+  animation: slideInLeft 1s ease;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.register-button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+.hero-image {
+  width: 50%;
+  height: auto;
+  animation: slideInRight 1s ease;
+}
+
+/* Internship Details Section */
+.internship-details {
+  background-color: #fff;
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.internship-details h2 {
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.internship-details p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.internship-details h3 {
+  color: #495057;
+  margin-top: 20px;
+}
+
+/* Available Domains Section */
+.domains-section {
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.domains-section h2 {
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.domains-section {
+  margin-bottom: 40px;
+}
+
+.domain-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.domain-list li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.qr-code-section {
+  text-align: center;
+}
+
+.qr-code-section h4 {
+  color: #343a40;
+}
+
+.qr-code {
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+.first-50-note {
+  font-size: 0.9em;
+  color: #007bff;
+}
+
+/* Footer Section */
+.App-footer {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 10px; /* Reduce padding for smaller screens */
+    justify-content: space-between; /* Keeps logos on the sides */
+    align-items: center; /* Center-aligns vertically within the header */
+    flex-direction: row; /* Keeps the header in a single row */
+  }
+
+  .App-header h1 {
+    font-size: 1.8em; /* Smaller font size for mobile screens */
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .logo {
+    width: 60px; /* Adjust logo size for smaller screens */
+  }
+
+  .hero-content h2 {
+    font-size: 2.2rem; /* Reduce font size for <h2> on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+    padding: 10px; /* Less padding for very small screens */
+    justify-content: space-between; /* Keeps logos on the sides */
+    align-items: center; /* Center-aligns vertically within the header */
+    flex-direction: row; /* Ensures horizontal alignment */
+  }
+
+  .App-header h1 {
+    font-size: 1em; /* Further reduce font size for very small screens */
+    margin: 0;
+  }
+
+  .logo {
+    width: 50px; /* Smaller logo size for very small screens */
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem; /* Further reduce font size for <h2> on very small screens */
+    line-height: 1.2;
+  }
+}
