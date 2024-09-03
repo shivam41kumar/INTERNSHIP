@@ -21,7 +21,9 @@ function App() {
           <p>
             Gain valuable hands-on experience and prepare for a successful career in IT. Join us to explore the future and become a part of our vibrant community.
           </p>
-          <button className="register-button">Register Now</button>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzjm5kMYjbsPhpJi73GIWzRiBtQEqhkwUpPq8gXL-DboC4kQ/viewform" target="_blank" rel="noopener noreferrer">
+      <button className="register-button">Register Now</button>
+    </a>
         </div>
         <img  alt="" className="hero-image" />
       </section>
