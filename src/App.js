@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       {/* Header Section */}
       <header className="App-header">
-        <img src={logo1} alt="TheSinghC_Technologies Logo" className="logo round-logo" />
+        <img src={logo1} alt="TheSinghC Technologies Logo" className="logo round-logo" />
         <h1>TheSinghC_Technologies</h1>
         <img src={logo2} alt="MSME Logo" className="logo" />
       </header>
