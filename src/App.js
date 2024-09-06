@@ -42,23 +42,35 @@ function App() {
       </section>
 
       {/* Available Domains Section */}
-      <section className="domains-section">
-        <h2>Available Domains</h2>
-        <ul className="domain-list">
-          <li>ML Intern</li>
-          <li>Data Analyst Intern</li>
-          <li>Python Developer Intern</li>
-          <li>Java Developer Intern</li>
-          <li>Web Development Intern</li>
-          <li>UI/UX Designer Intern</li>
-        </ul>
+      {/* Available Domains Section */}
+<section className="domains-section">
+  <h2>Available Domains</h2>
+  <ul className="domain-list">
+    <li>ML Intern</li>
+    <li>Data Analyst Intern</li>
+    <li>Python Developer Intern</li>
+    <li>Java Developer Intern</li>
+    <li>Web Development Intern</li>
+    <li>UI/UX Designer Intern</li>
+  </ul>
 
-        <div className="qr-code-section">
-          <h4>Scan to Register (First 50 Get Special Benefits)</h4>
-          <img src={qrCode} alt="QR Code" className="qr_code" />
-          <p className="first-50-note">* Limited Offer</p>
-        </div>
-      </section>
+  <div className="domain-description">
+    <h3>Domain Descriptions</h3>
+    <p><strong>ML Intern:</strong> Learn machine learning algorithms, work on real-world projects, and explore AI advancements.</p>
+    <p><strong>Data Analyst Intern:</strong> Gain insights from data, create reports, and analyze trends using modern tools like Python and Excel.</p>
+    <p><strong>Python Developer Intern:</strong> Develop robust back-end systems, automate tasks, and dive deep into Python frameworks like Django and Flask.</p>
+    <p><strong>Java Developer Intern:</strong> Build enterprise-grade applications, focus on object-oriented design, and enhance your skills with Java frameworks.</p>
+    <p><strong>Web Development Intern:</strong> Design and develop dynamic websites using HTML, CSS, JavaScript, and popular frameworks like React and Angular.</p>
+    <p><strong>UI/UX Designer Intern:</strong> Create user-centric designs, build wireframes, and improve user experience with modern design tools.</p>
+  </div>
+
+  <div className="qr-code-section">
+    <h4>Scan to Register (First 50 Get Special Benefits)</h4>
+    <img src={qrCode} alt="QR Code" className="qr_code" />
+    <p className="first-50-note">* Limited Offer</p>
+  </div>
+</section>
+
 
       {/* Contact Information Section */}
       <footer className="App-footer">
