@@ -55,7 +55,7 @@ function App() {
 
         <div className="qr-code-section">
           <h4>Scan to Register (First 50 Get Special Benefits)</h4>
-          <img src={qrCode} alt="QR Code" className="qr-code" />
+          <img src={qrCode} alt="QR Code" className="qr_code" />
           <p className="first-50-note">* Limited Offer</p>
         </div>
       </section>
